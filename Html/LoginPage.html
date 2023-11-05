@@ -5,23 +5,193 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log In</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset some default styles */
+    body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Improved CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .login-page {
+      flex: 1;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007acc;
+      color: #fff;
+      height: 70px;
+      padding: 0 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    .user-profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    /* Form Styles */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+    }
+
+    /* Label Styles */
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    /* Input Styles */
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    /* Button Styles */
+    .btn {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background-color: #007acc;
+    }
+
+    /* Background Image Section */
+    .background-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("images/bg.jpg");
+      background-size: cover;
+      height: 300px;
+    }
+
+    .bg-text {
+      background-color: rgba(84, 86, 88, 0.7);
+      color: #fff;
+      padding: 20px;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact-info a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .quick-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="login-page">
+    <!-- Header Section -->
     <header>
-      <h1>Log In</h1>
+      <div class="logo">
+        <img src="images/logo.png" alt="UniConnect">
+        <span>UniConnect</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="connect-and-learn.html">Connect & Learn</a></li>
+          <li><a href="campusmarket/campusmarket.html">Campus Market</a></li>
+        </ul>
+      </nav>
+      <div class="user-profile">
+        <img src="images/profile.png" alt="User Profile">
+        <div>
+          <span>Login</span><br>
+          <span></span>
+        </div>
+        <a href="user-profile.html"></a>
+      </div>
     </header>
+        <!-- Background Image Section -->
+        <section class="background-image">
+          <div class="bg-text">
+            <h1>Your go-to platform to Connect, Learn, and Earn!</h1>
+          </div>
+        </section>
     <form action="home.html" method="post">
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
-      
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
-
       <div class="buttons">
         <button type="submit" class="btn">Log In</button>
       </div>
     </form>
   </div>
+  <!-- Footer Section -->
+  <footer>
+    <div class="contact-info">
+      <p>Contact Us: <a href="mailto:contact@uniconnect.com">contact@uniconnect.com</a></p>
+    </div>
+    <div class="quick-links" style="margin-top: 10px;">
+      <a href="faq.html">FAQ</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="help.html">Help/Support</a>
+    </div>
+  </footer>
 </body>
 </html>
